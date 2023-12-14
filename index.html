@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Job Center</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        h1 {
+            font-weight: bold;
+        }
+        
+        h1 .text-muted {
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        h2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            text-decoration-color: black;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            background-color: rgb(19, 19, 51);
+            color: #ffffff;
+            border-radius: 25px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg"> <!--navbar-expand-lg e para expandir para desktop-->
+            <div class="container">
+                <h1 class="display-4">Prime Job Center
+                    <small class="text-muted">Career Center</small>
+                </h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span> <!--Aqui e para criar o hamburguer do menu-->
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu"> <!--Aqui  temos o collapse para expandir o menu e o justify e para alinhar o menu na esquerda quando tiver no desktop-->
+                <ul class="nav navbar-nav nav-pills">
+                    <!--nav: Define um componente de navegação em HTML.
+                    navbar-nav: Estrutura e alinha os itens de navegação horizontalmente dentro de uma barra de navegação.
+                    nav-pills: Estiliza os itens de navegação como "pílulas" ou abas dentro de uma barra de navegação.-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#empresa">Sobre a Empresa</a> <!-- Active serve para ativar o link-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ambientes">Ambientes</a> <!-- Active serve para ativar o link-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Entre em Contato</a> <!--Nav-link serve para ativar a navegacao no links-->
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Criando o carrosel de 3 imagens com frases-->
+    <div class="container">
+        <div id="imagens-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Transforme seu escritório em um ambiente de excelência e produtividade.</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Desperte a imaginação e a diversão no espaço de estudos das crianças!</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Potencialize a excelência na aprendizagem com um escritório que inspira conhecimento.</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Criando os botoes dentro do carrosel para mover para os lados -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#imagens-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imagens-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Botoes de transicao as barrinhas embaixo-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imagens-carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#imagens-carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#imagens-carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <!-- Sobre a Empresa -->
+        <div id="empresa">
+            <h3>Sobre a Empresa</h3>
+            <p>
+                O Prime Job Center é uma empresa inovadora focada na criação de ambientes corporativos que priorizam o bem-estar e a saúde dos funcionários. Compreendemos que um ambiente de trabalho saudável não só beneficia individualmente cada colaborador, mas também impulsiona o desempenho coletivo e a produtividade da empresa como um todo. Nossa abordagem é holística, considerando não apenas o aspecto físico, mas também o mental e emocional, promovendo espaços que estimulam a vitalidade e a energia positiva.
+            </p>
+            <p>
+                Nosso compromisso vai além do espaço físico. No Prime Job Center, estamos empenhados em criar uma cultura organizacional que motive e inspire os colaboradores. Implementamos programas e iniciativas que visam nutrir o engajamento, a criatividade e o equilíbrio entre vida pessoal e profissional. Acreditamos que funcionários satisfeitos e motivados não apenas trazem melhores resultados para a empresa, mas também contribuem para um ambiente de trabalho mais harmonioso e próspero. Nossa missão é transformar os locais de trabalho em centros de excelência, onde a saúde, a motivação e o desempenho se unem para alcançar o máximo potencial.
+            </p>
+        </div>
+        <!--layout com grid, onde na visão desktop teremos 3 itens por linha, no tablet 2 itens por linha e no smartphone 1 item por linha
+            1- coloquei uma sombra nos cards com shadow-lg p-3 mb-5 bg-body rounded
+            2- coloquei cores nos cards com bg-** text-**  -->
+        <h3 id="ambientes">Ambientes</h3>    
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/02/01/11/people-2569404_1280.jpg"
+                        class="card-img-top">
+                    <div class="card-body bg-secondary text-white">
+                        <h5 class="card-title">Ambiente da Concentração</h5>
+                        <p class="card-text">Na concentração plena, o mundo se dissolve em cada pensamento</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/05/13/06/girl-2583442_1280.jpg"
+                        class="card-img-top">
+                    <div class="card-body bg-success text-white">
+                        <h5 class="card-title">Ambiente de Inspiração</h5>
+                        <p class="card-text">Da inspiração nascem as asas que elevam os sonhos além dos limites</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/31/11/25/working-791175_1280.jpg"
+                        class="card-img-top">
+                    <div class="card-body bg-dark text-white">
+                        <h5 class="card-title">Ambientes Climatizados</h5>
+                        <p class="card-text">No ambiente climatizado, o conforto se funde à harmonia, envolvendo cada
+                            momento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Formulario de contato -->
+        <form id="contato">
+            <h3>Entre em Contato</h3>
+            <div class="mb-3 mt-3">
+                <label for="nome" class="form-label">Nome Completo:</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Digite seu email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="mensagem" rows="3"></textarea>
+            </div>
+            <div class="mb-3 form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Aceito os termos do site para envio do meu
+                    contato!</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy;2023 Direitos reservados a Jeymison Menezes</p>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
